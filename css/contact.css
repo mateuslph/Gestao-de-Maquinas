@@ -1,0 +1,27 @@
+.main-contact {
+    background-color: #bad699;
+    height: 650px;
+}
+
+.main-support-initial {
+    padding: 20px;
+    border-top: double;
+    border-bottom: double;
+    border-left: double;
+    border-right: double;
+}
+
+.main-support {
+    padding: 20px;
+    border-bottom: double;
+    border-left: double;
+    border-right: double;
+}
+
+.main-support-initial h5, .main-support h5 {
+    padding: 5px;
+}
+
+.em-support {
+    font-weight: bold;
+}

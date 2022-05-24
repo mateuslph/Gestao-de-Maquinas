@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajuda</title>
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/all-content.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/all-content.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Feedback</h1>
-
-        <div class="bar-main">
-            <ul class="list-menu">
+    <header id="header">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="subscription.html">Iscrição</a></li>
-                <li><a href="contact.html">Contato</a></li>
-                <li><a href="help.html">Ajuda</a></li>
+                <li><a href="./subscription.html">Inscrição</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+                <li><a href="./help.html">Ajuda</a></li>
             </ul>
-            
-            <a href="user.html">USUÁRIO-01</a>
-        </div>
+        </nav>
+        <a id="logo" href="./user.html">USUÁRIO-01</a>
     </header>
+
+    <script src="../scripts/script.js"></script>
+
+    <div class="div-header">
+        <h1>Informações importantes</h1>
+    </div>
+
+    <main class="body-first">        
+        
+    </main>
 
     <footer>
         <h1>&copy;Copyright - Gestão de Máquinas</h1>

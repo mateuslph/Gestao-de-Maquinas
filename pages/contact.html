@@ -3,38 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <title>Contato</title>
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/all-content.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/all-content.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Contatos Interessantes</h1>
-
-        <div class="bar-main">
-            <ul class="list-menu">
+    <header id="header">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="subscription.html">Iscrição</a></li>
-                <li><a href="contact.html">Contato</a></li>
-                <li><a href="help.html">Ajuda</a></li>
+                <li><a href="./subscription.html">Inscrição</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+                <li><a href="./help.html">Ajuda</a></li>
             </ul>
-
-            <a href="user.html">USUÁRIO-01</a>
-        </div>
+        </nav>
+        <a id="logo" href="./user.html">USUÁRIO-01</a>
     </header>
 
-    <main class="main-contact">
-        <section class="main-support-initial">
-            <h5><em class="em-support">Suporte Técnico: </em>Mateus L. Pereira</h5>
-            <h5><em class="em-support">E-mail: </em>email@mailum.com</h5>
+    <script src="../scripts/script.js"></script>
+
+    <div class="div-header">
+        <h1>Encontre telefones úteis</h1>
+    </div>
+
+    <main class="body-first">
+        <section class="section-support">
+            <table>
+                <tr>
+                    <td><em class="em-support">Suporte Técnico: </em>Mateus L. Pereira</td>
+                    <td class="col-two"><em class="em-support">E-mail: </em>email@mailum.com</td>
+                </tr>
+            </table>
         </section>
 
-        <section class="main-support">
-            <h5><em class="em-support">Administrador de Máquinas: </em>Fulano de Tal</h5>
-            <h5><em class="em-support">E-mail: </em>email@maildois.com</h5>
+        <section class="section-support">
+            <table>
+                <tr>
+                    <td><em class="em-support">Administrador de Máquinas: </em>Fulano de Tal</td>
+                    <td class="col-two"><em class="em-support">E-mail: </em>email@maildois.com</td>
+                </tr>
+            </table>
         </section>
     </main>
 

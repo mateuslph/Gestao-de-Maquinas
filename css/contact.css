@@ -1,25 +1,27 @@
-.main-contact {
-    background-color: #bad699;
-    height: 650px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100;400&display=swap');
+
+:root {
+    --body-color: #bad699;
 }
 
-.main-support-initial {
+.section-support {
     padding: 20px;
+    margin: 0.6em 0.3em 0 0.3em;
     border-top: double;
     border-bottom: double;
     border-left: double;
     border-right: double;
+    height: max-content;
+    display: grid;
 }
 
-.main-support {
-    padding: 20px;
-    border-bottom: double;
-    border-left: double;
-    border-right: double;
-}
-
-.main-support-initial h5, .main-support h5 {
+.section-support table tr td {
     padding: 5px;
+}
+
+.col-two {
+    text-align: start;
+    width: 40%;
 }
 
 .em-support {

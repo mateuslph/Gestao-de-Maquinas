@@ -29,32 +29,37 @@
     <script src="../scripts/script.js"></script>
 
     <div class="div-header">
-        <h1>Iscrição de máquinas</h1>
+        <h1>Cadastro de máquinas</h1>
     </div>
 
     <main class="body-first">        
-        <form class="form-main">
+        <form action="" method="">
             <fieldset class="grupo">
                 <div class="campo">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" id="usuario" value="USUÁRIO-01" disabled required>
+                    <label for="nome">Name</label>
+                    <input type="text" name="nome" id="nome" required>
                 </div>
                 <div class="campo">
-                    <label for="nome-pessoa">Para quem?</label>
-                    <input type="text" name="nome-pessoa" id="nome-pessoa" placeholder="Nome" maxlength="15" required>
-                </div>                
-                <div class="campo">
-                    <label for="tipo-maquina">Endereço</label>
-                    <select name="tipo-maquina" id="maquina">
-                        <option selected disabled value="selecione">Selecione</option>
-                        <option value="maquina-1">Santa Terezinha</option>
-                        <option value="maquina-2">Santa Rosa</option>
-                        <option value="maquina-3">Linha Sortica</option>
-                        <option value="maquina-3">Linha Azeredo</option>
-                        <option value="maquina-3">Esquina Sherer</option>
-                    </select>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
             </fieldset>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="genero">Qual é o seu gênero?</label>
+                <label>
+                    <input type="radio" name="genero" value="femenino" required>Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="masculino" required>Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="ambos" required>Ambos
+                </label>
+            </div>
             <div class="campo">
                 <label for="tipo-maquina">Selecione a maquina</label>
                 <select name="tipo-maquina" id="maquina">
@@ -64,19 +69,13 @@
                     <option value="maquina-3">Ensiladeira</option>
                 </select>
             </div>
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="data-emprestimo">Data da retirada</label>
-                    <input type="date" name="data-emprestimo" id="data-emprestimo">
-                </div>
-                <div class="campo">
-                    <label for="data-emprestimo">Previsto para entrega</label>
-                    <input type="date" name="data-emprestimo" id="data-emprestimo">
-                </div>
-            </fieldset>
+            <div class="campo">
+                <label for="data-emprestimo">Dia da retirada</label>
+                <input type="date" name="data-emprestimo" id="data-emprestimo">
+            </div>
             <div class="campo">
                 <label for="observacoes">Observações</label>
-                <textarea maxlength="105"  name="observacoes" id="observacoes" rows="3"></textarea>
+                <textarea maxlength="150"  name="observacoes" id="observacoes" cols="48" rows="3"></textarea>
             </div>
             <button type="submit" class="botao">Concluído</button>
         </form>

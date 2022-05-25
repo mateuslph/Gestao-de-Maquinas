@@ -44,21 +44,21 @@
                     <input type="text" name="nome-pessoa" id="nome-pessoa" placeholder="Nome" maxlength="15" required>
                 </div>                
                 <div class="campo">
-                    <label for="tipo-maquina">Endereço</label>
-                    <select name="tipo-maquina" id="maquina">
-                        <option selected disabled value="selecione">Selecione</option>
-                        <option value="maquina-1">Santa Terezinha</option>
-                        <option value="maquina-2">Santa Rosa</option>
-                        <option value="maquina-3">Linha Sortica</option>
-                        <option value="maquina-3">Linha Azeredo</option>
-                        <option value="maquina-3">Esquina Sherer</option>
+                    <label for="endereco">Endereço</label>
+                    <select name="endereco" id="endereco" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="endereco-1">Santa Terezinha</option>
+                        <option value="endereco-2">Santa Rosa</option>
+                        <option value="endereco-3">Linha Sortica</option>
+                        <option value="endereco-4">Linha Azeredo</option>
+                        <option value="endereco-5">Esquina Sherer</option>
                     </select>
                 </div>
             </fieldset>
             <div class="campo">
-                <label for="tipo-maquina">Selecione a maquina</label>
-                <select name="tipo-maquina" id="maquina">
-                    <option selected disabled value="selecione">Selecione</option>
+                <label for="maquina">Selecione a maquina</label>
+                <select name="maquina" id="maquina" required>
+                    <option selected disabled value="">Selecione</option>
                     <option value="maquina-1">Trator MF275</option>
                     <option value="maquina-2">Trator Jooh Deere</option>
                     <option value="maquina-3">Ensiladeira</option>
@@ -66,17 +66,17 @@
             </div>
             <fieldset class="grupo">
                 <div class="campo">
-                    <label for="data-emprestimo">Data da retirada</label>
-                    <input type="date" name="data-emprestimo" id="data-emprestimo">
+                    <label for="data-retirada">Data da retirada</label>
+                    <input type="date" name="data-retirada" id="data-retirada" required>
                 </div>
                 <div class="campo">
                     <label for="data-emprestimo">Previsto para entrega</label>
-                    <input type="date" name="data-emprestimo" id="data-emprestimo">
+                    <input type="date" name="data-emprestimo" id="data-emprestimo" required>
                 </div>
             </fieldset>
             <div class="campo">
                 <label for="observacoes">Observações</label>
-                <textarea maxlength="105"  name="observacoes" id="observacoes" rows="3"></textarea>
+                <textarea name="observacoes" id="observacoes" maxlength="105" rows="3"></textarea>
             </div>
             <button type="submit" class="botao">Concluído</button>
         </form>

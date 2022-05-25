@@ -13,10 +13,12 @@
     border-right: double;
     height: max-content;
     display: grid;
+    width: -webkit-fill-available;
 }
 
 .section-support table tr td {
     padding: 5px;
+    word-break: break-word;
 }
 
 .col-two {

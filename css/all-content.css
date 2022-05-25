@@ -130,7 +130,12 @@ a {
     font-family: var(--general-font-family);
     font-size: 1em;
     color: #59429d;
-    padding: 20px;    
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;   
 }
 
 /*rodape*/

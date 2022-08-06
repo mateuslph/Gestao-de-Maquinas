@@ -12,6 +12,11 @@
 	resize: none;
 }
 
-.margin-pedding-right {
+.form-main .campo-observacoes {
+	position: relative;
+	left: 15%;
+}
+
+.pedding-right-endereco {
 	margin-right: 15px;
 }

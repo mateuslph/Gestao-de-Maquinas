@@ -6,6 +6,8 @@
     --menu-hover-color: #2f9101;
     --menu-row-mobile: #9dfa67;
     --body-color: #bad699;
+    --form-color: #d3e9b9;
+    --border-form-color: #7fc557;
 
     --general-font-family: 'Zilla Slab', serif;
 }
@@ -67,18 +69,35 @@ a {
 /*body*/
 
 body {
-    min-width: 300px;
+    min-width: 320px;
 }
 
 .body-first {
     background-color: var(--body-color);
     font-family: var(--general-font-family);
     font-size: 1em;
-    color: #59429d;
-    padding: 20px; 
-    display: flex; 
+    padding: 20px;
     justify-content: center;
+}
+
+.div-form-first {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-main {
+    border: solid 3px var(--border-form-color);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--form-color);
+}
+
+.grupo {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .fieldset {
@@ -113,6 +132,7 @@ fieldset.grupo
 .campo {
 	float: left;
 	margin-right: 1em;
+    margin-left: 1em;
 }
 
 .campo input[type="text"], .campo input[type="usuario"], .campo input[type="date"],
@@ -136,7 +156,7 @@ fieldset.grupo
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 	position: relative;
-	left: 40%;
+	left: 45%;
 	margin-top: 20px;
 	margin-left: 15px;
 	transform: translate(-50%, -50%)
@@ -221,8 +241,8 @@ footer {
     }
 }
 
-@media (max-width: 515px) {
+/* @media (max-width: 515px) {
     #table__display515 {
         display: none;
     }
-}
+} */

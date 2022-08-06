@@ -69,7 +69,7 @@ a {
 /*body*/
 
 body {
-    min-width: 320px;
+    min-width: 340px;
 }
 
 .body-first {
@@ -88,13 +88,12 @@ body {
 
 .form-main {
     border: solid 3px var(--border-form-color);
-    border-radius: 15px;
-    padding: 20px;
     background-color: var(--form-color);
+    border-radius: 15px;
+    padding: 20px;    
 }
 
 .grupo {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -122,11 +121,11 @@ input, select, textarea, .botao {
 	margin-bottom: 1em;
 }
 
-.campo label {
+/* .campo label {
 	margin-bottom: 0.2em;
 	color: #59429d;
 	display: block;
-}
+} */
 
 fieldset.grupo 
 .campo {
@@ -173,12 +172,13 @@ fieldset.grupo
 }
 
 /*rodape*/
+
 footer {
-    width: 100%;
-    padding: 1.5em 0 1.5em 0;
-    text-align: center; 
     font-family: var(--general-font-family);
     background-color: var(--menu-footer-color);
+    width: 100%;
+    padding: 1.5em 0 1.5em 0;
+    text-align: center;
 }
   
 @media (max-width: 900px) {

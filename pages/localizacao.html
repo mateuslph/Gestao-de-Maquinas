@@ -1,4 +1,5 @@
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css" th:href="@{css/resetcss}">
     <link rel="stylesheet" type="text/css" href="../css/todo-conteudo.css" th:href="@{css/todoconteudocss}">
 </head>
+
 <body>
     <header id="header">
         <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
                 <span id="hamburger"></span>
             </button>
             <ul id="menu" role="menu">
@@ -30,22 +33,26 @@
         <h1>Localidades</h1>
     </div>
 
-    <main class="body-first">        
-        <form class="form-main">
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="nome-pessoa">Nova localidade</label>
-                    <input type="text" name="localidade" id="localidade" placeholder="localidade" maxlength="80" required>
-                </div>
-            </fieldset>
-            <button type="submit" class="botao">Concluído</button>
-        </form>
+    <main class="body-first">
+        <div class="div-form-first">
+            <form class="form-main">
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome-pessoa">Nova localidade</label>
+                        <input type="text" name="localidade" id="localidade" placeholder="localidade" maxlength="80"
+                            required>
+                    </div>
+                </fieldset>
+                <button type="submit" class="botao">Concluído</button>
+            </form>
+        </div>
     </main>
-    
+
     <script src="../scripts/script.js"></script>
 
     <footer>
         <h1>&copy;Copyright - Gestão de Máquinas</h1>
     </footer>
 </body>
+
 </html>

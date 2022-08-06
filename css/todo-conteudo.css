@@ -78,13 +78,7 @@ body {
     padding: 20px; 
     display: flex; 
     justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;   
-}
-
-.form-main {
-    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .fieldset {
@@ -224,5 +218,11 @@ footer {
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+}
+
+@media (max-width: 515px) {
+    #table__display515 {
+        display: none;
     }
 }

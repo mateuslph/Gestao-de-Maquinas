@@ -8,6 +8,8 @@
     --body-color: #bad699;
     --form-color: #d3e9b9;
     --border-form-color: #7fc557;
+    --form-font-color: #59429d;
+    --black-color: #000000;
 
     --general-font-family: 'Zilla Slab', serif;
 }
@@ -75,7 +77,6 @@ body {
 .body-first {
     background-color: var(--body-color);
     font-family: var(--general-font-family);
-    font-size: 1em;
     padding: 20px;
     justify-content: center;
 }
@@ -83,7 +84,8 @@ body {
 .div-form-first {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;    
+    font-size: 1em;
 }
 
 .form-main {
@@ -105,7 +107,6 @@ body {
 
 input, select, textarea, .botao {
 	font-size: 1.2em;
-	color: #59429d;
 	border-radius: 5px;
 }
 
@@ -169,6 +170,15 @@ fieldset.grupo
 
 .botao, select {
 	cursor: pointer;
+}
+
+.titulo-tabela {
+    color: var(--black-color);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em 0 0;
+    text-transform: uppercase;
 }
 
 /*rodape*/

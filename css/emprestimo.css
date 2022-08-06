@@ -1,0 +1,17 @@
+#data-retirada, #data-emprestimo {
+	height: 1.6em;
+}
+
+#horas-fazer {
+	width: 60px;
+}
+
+#observacoes {
+	height: max-content;
+	width: 70%;
+	resize: none;
+}
+
+.margin-pedding-right {
+	margin-right: 15px;
+}

@@ -106,12 +106,12 @@
 				<tbody>
 					<tr th:each="emprestimo:${emprestimo}">
 						<td th:text=${emprestimo.id}>id</td>
-						<td th:text=${emprestimo.solicitante}>Solicitante</td>
-						<td th:text=${emprestimo.maquina.descricao}>Máquina</td>
-						<td th:text=${emprestimo.dataDevolucao}>Data</td>
+						<td th:text=${emprestimo.solicitante}>solicitante</td>
+						<td th:text=${emprestimo.maquina.descricao}>máquina</td>
+						<td th:text=${emprestimo.dataDevolucao}>data</td>
 
 						<td>
-							<a th:href="@{/emprestimo/delete/{id}(id=${emprestimo.id})}"
+							<a th:href="@{/emprestimo/{id}(id=${emprestimo.id})}"
 								class="btn btn-outline-success">OK</a>
 							<!-- <a th:href="@{/emprestimo/editar/{id}(id=${emprestimo.id})}"
                             class="btn btn-outline-warning">Editar</a> -->

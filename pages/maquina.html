@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/reset.css" th:href="@{css/resetcss}">
 	<link rel="stylesheet" type="text/css" href="../css/todo-conteudo.css" th:href="@{css/todoconteudocss}">
 	<link rel="stylesheet" type="text/css" href="../css/maquina.css" th:href="@{css/maquinacss}">
+	<link rel="stylesheet" type="text/css" href="../css/tabela.css" th:href="@{css/tabela}">
 </head>
 
 <body>
@@ -52,6 +53,33 @@
 				</fieldset>
 				<button type="submit" class="botao">Concluído</button>
 			</form>
+		</div>
+
+		<div id="div-table">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">Código</th>
+						<th scope="col">Descrição</th>
+						<th scope="col">Observação</th>
+						<th scope="col">Opções</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="maquina:${maquina}">
+						<td th:text=${maquina.id}>id</td>
+						<td th:text=${maquina.descricao}>descrição</td>
+						<td th:text=${maquina.observacao}>observação</td>
+
+						<td>
+							<a th:href="@{/maquina/{id}(id=${maquina.id})}"
+								class="btn btn-outline-desativar">desativar</a>
+							<!-- <a th:href="@{/emprestimo/editar/{id}(id=${emprestimo.id})}"
+							class="btn btn-outline-warning">Editar</a> -->
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</main>
 

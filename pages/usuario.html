@@ -8,6 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="../css/reset.css" th:href="@{css/resetcss}">
 	<link rel="stylesheet" type="text/css" href="../css/todo-conteudo.css" th:href="@{css/todoconteudocss}">
+	<link rel="stylesheet" type="text/css" href="../css/tabela.css" th:href="@{css/tabela}">
 </head>
 
 <body>
@@ -55,7 +56,39 @@
 							id="usuario-cpf-cnpj" placeholder="Digite seu CPF" maxlength="80" required>
 					</div>
 				</fieldset>
+				<button type="submit" class="botao">Concluído</button>
 			</form>
+		</div>
+
+		<div id="div-table">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">Código</th>
+						<th scope="col">Usuário</th>
+						<th scope="col">Senha</th>
+						<th scope="col">E-mail</th>
+						<th scope="col">CPF</th>
+						<th scope="col">Opções</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="usuario:${usuario}">
+						<td th:text=${usuario.id}>id</td>
+						<td th:text=${usuario.nome}>usuario</td>
+						<td th:text=${usuario.senha}>senha</td>
+						<td th:text=${usuario.email}>e-mail</td>
+						<td th:text=${usuario.cpf}>cpf</td>
+
+						<td>
+							<a th:href="@{/usuario/{id}(id=${usuario.id})}"
+								class="btn btn-outline-desativar">desativar</a>
+							<!-- <a th:href="@{/emprestimo/editar/{id}(id=${emprestimo.id})}"
+                            class="btn btn-outline-warning">Editar</a> -->
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</main>
 

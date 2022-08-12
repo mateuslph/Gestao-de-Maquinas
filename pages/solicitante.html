@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="../css/reset.css" th:href="@{css/resetcss}">
     <link rel="stylesheet" type="text/css" href="../css/todo-conteudo.css" th:href="@{css/todoconteudocss}">
+	<link rel="stylesheet" type="text/css" href="../css/tabela.css" th:href="@{css/tabela}">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                             maxlength="80" required>
                     </div>
                     <div class="campo">
-                        <label for="maquina">Selecione a localidade do solicitante</label> <select name="maquina"
+                        <label for="maquina">Selecione a localidade</label> <select name="maquina"
                             id="maquina" required>
                             <option selected disabled value="">Selecione</option>
                             <option value="endereco-1">Santa Terezinha</option>
@@ -59,9 +60,54 @@
                             maxlength="80" required>
                     </div>
                 </fieldset>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="cpf-solicitante">CPF do solicitante</label>
+                        <input type="text" name="cpf-solicitante" id="cpf-solicitante" placeholder="CPF do solicitante"
+                            maxlength="80" required>
+                    </div>
+                    <div class="campo">
+                        <label for="bloco-solicitante">Bloco do solicitante</label>
+                        <input type="text" name="bloco-solicitante" id="bloco-solicitante" placeholder="Bloco do solicitante"
+                            maxlength="80" required>
+                    </div>
+                </fieldset>
                 <button type="submit" class="botao">Concluído</button>
             </form>
         </div>
+
+        <div id="div-table">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">Código</th>
+						<th scope="col">Solicitante</th>
+						<th scope="col">Localidade</th>
+						<th scope="col">Telefone</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">Bloco</th>
+						<th scope="col">Opções</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="solicitante:${solicitante}">
+						<td th:text=${solicitante.id}>id</td>
+						<td th:text=${solicitante.solicitante}>solicitante</td>
+						<td th:text=${solicitante.localizacao.local}>localidade</td>
+						<td th:text=${solicitante.telefone}>telefone</td>
+                        <td th:text=${solicitante.cpf}>cpf</td>
+                        <td th:text=${solicitante.bloco}>bloco</td>
+
+						<td>
+							<a th:href="@{/solicitante/{id}(id=${solicitante.id})}"
+								class="btn btn-outline-desativar">desativar</a>
+							<!-- <a th:href="@{/emprestimo/editar/{id}(id=${emprestimo.id})}"
+                            class="btn btn-outline-warning">Editar</a> -->
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
     </main>
 
     <script src="../scripts/script.js"></script>

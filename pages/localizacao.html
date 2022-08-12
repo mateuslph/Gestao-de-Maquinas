@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="../css/reset.css" th:href="@{css/resetcss}">
     <link rel="stylesheet" type="text/css" href="../css/todo-conteudo.css" th:href="@{css/todoconteudocss}">
+	<link rel="stylesheet" type="text/css" href="../css/tabela.css" th:href="@{css/tabela}">
 </head>
 
 <body>
@@ -45,6 +46,33 @@
                 </fieldset>
                 <button type="submit" class="botao">Concluído</button>
             </form>
+        </div>
+
+        <h3 class="titulo-tabela">Listagem das localidades:</h3>
+
+        <div id="div-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Localidade</th>
+                        <th scope="col">Opções</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="localizacao:${localizacao}">
+                        <td th:text=${localizacao.id}>id</td>
+                        <td th:text=${localizacao.local}>localizacao</td>
+
+                        <td>
+                            <a th:href="@{/localizacao/{id}(id=${localizacao.id})}"
+                                class="btn btn-outline-desativar">desativar</a>
+                            <!-- <a th:href="@{/emprestimo/editar/{id}(id=${emprestimo.id})}"
+                            class="btn btn-outline-warning">Editar</a> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
 

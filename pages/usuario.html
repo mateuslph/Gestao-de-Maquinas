@@ -48,10 +48,6 @@
 							id="usuario-senha" placeholder="Crie uma senha" maxlength="80" required>
 					</div>
 					<div class="campo">
-						<label for="usuario-email">E-mail do Servidor</label> <input type="text" name="usuario-email"
-							id="usuario-email" placeholder="Digite seu e-mail" maxlength="80" required>
-					</div>
-					<div class="campo">
 						<label for="usuario-cpf-cnpj">Digite seu CPF</label> <input type="text" name="usuario-cpf-cnpj"
 							id="usuario-cpf-cnpj" placeholder="Digite seu CPF" maxlength="80" required>
 					</div>
@@ -67,7 +63,6 @@
 						<th scope="col">Código</th>
 						<th scope="col">Usuário</th>
 						<th scope="col">Senha</th>
-						<th scope="col">E-mail</th>
 						<th scope="col">CPF</th>
 						<th scope="col">Opções</th>
 					</tr>
@@ -77,7 +72,6 @@
 						<td th:text=${usuario.id}>id</td>
 						<td th:text=${usuario.nome}>usuario</td>
 						<td th:text=${usuario.senha}>senha</td>
-						<td th:text=${usuario.email}>e-mail</td>
 						<td th:text=${usuario.cpf}>cpf</td>
 
 						<td>
